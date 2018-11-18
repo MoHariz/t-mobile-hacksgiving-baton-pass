@@ -27,7 +27,7 @@ export default class Runner extends Component {
                 bootstrapURLKeys={{ key: "AIzaSyBTFjt9CuqK-kxwxNF7grsPafnHBSVUfD8" }}
                 defaultCenter={this.props.center}
                 defaultZoom={this.props.zoom}
-                onClick={_onClick}
+                onClick={(click) => (this.onClick(click)) }
               >
                 <AnyReactComponent
                   lat={47.5815936}
