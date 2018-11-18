@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+}
