@@ -5,8 +5,12 @@ import './App.css';
 
 import Runner from './components/runner';
 
-// importing components
+// importing page component
 import HomePage from './components/HomePage';
+import RunnerPage from './components/runner';
+import SellerPage from './components/seller';
+import BuyerPage from './components/buyer';
+
 
 
 class App extends Component {
@@ -17,22 +21,22 @@ class App extends Component {
 
   render() {
     let renderHomePage = (props) => <HomePage {...props}/>;
+    let renderBuyerPage = (props) => <BuyerPage {...props}/>;
+    let renderSellerPage = (props) => <SellerPage {...props}/>;
+    let renderRunnerPage = (props) => <RunnerPage {...props}/>;
     
 
     
     return (
-      <div>
-        <Router>
-          <Switch>
-            <Route exact path='/' render={renderHomePage}/>
-            <Route path='/buyer'></Route>
-            <Route path='/seller'></Route>
-            <Route path='/runner' component={Runner}></Route>
-          </Switch>
+      <Router>
+        <Switch>
+          <Route exact path='/' render={renderHomePage}/>
+          <Route path='/buyer' render={renderBuyerPage}></Route>
+          <Route path='/seller' render={renderSellerPage}></Route>
+          <Route path='/runner' render={renderRunnerPage}></Route>
+        </Switch>
       </Router>
 
-     <Link to={"/runner"} activeClassName="activeLink">To Runner</Link>
-    </div>
     );
   }
 }
