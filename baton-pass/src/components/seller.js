@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import EarbudPic from '../img/earbuds.jpeg';
 
 export default class SellerPage extends Component {
@@ -39,7 +40,6 @@ export default class SellerPage extends Component {
     let recipeList = [];
 
 
-    console.log("HELLO");
     // if (this.state.recipes != null) {
 
     //   Object.keys(this.state.recipes).forEach((recipe) => {
@@ -58,12 +58,15 @@ export default class SellerPage extends Component {
         <header>
             <h1>My Orders</h1> 
         </header>
+            <NavLink to ='/PostOrder' className="nav-link btn btn-dark text-white mb-2" 
+                activeClassName="activeLink"> Post Package
+            </NavLink>
         <section>
             <div class="container col">
-                    <OrderCards />
-                    <OrderCards />       
-                    <OrderCards />
-                    <OrderCards />
+                <OrderCards />
+                <OrderCards />       
+                <OrderCards />
+                <OrderCards />
             </div>
         </section>
     </body>
