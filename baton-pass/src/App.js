@@ -11,6 +11,7 @@ import HomePage from './components/HomePage';
 import RunnerPage from './components/runner';
 import SellerPage from './components/seller';
 import BuyerPage from './components/buyer';
+import PostOrder from './components/PostOrder';
 
 
 
@@ -25,7 +26,7 @@ class App extends Component {
     let renderBuyerPage = (props) => <BuyerPage {...props}/>;
     let renderSellerPage = (props) => <SellerPage {...props}/>;
     let renderRunnerPage = (props) => <RunnerPage {...props}/>;
-    
+    let renderPostOrderPage = (props) => <PostOrder {...props}/>;
 
     
     return (
@@ -37,6 +38,7 @@ class App extends Component {
             <Route path='/buyer' render={renderBuyerPage}></Route>
             <Route path='/seller' render={renderSellerPage}></Route>
             <Route path='/runner' render={renderRunnerPage}></Route>
+            <Route path='/PostOrder' render={renderPostOrderPage}></Route>
           </Switch>
         </Router>
       </div>
