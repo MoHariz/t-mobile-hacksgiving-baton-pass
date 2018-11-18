@@ -1,12 +1,14 @@
+
 import React, { Component } from 'react';
+
+
 import { BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
-import logo from './logo.svg';
-import './App.css';
-import GoogleMapReact from 'google-map-react';
+import logo from '../logo.svg';
+import '../App.css';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-class Runner extends Component {
+export default class Runner extends Component {
 
     static defaultProps = {
         center: {
@@ -20,8 +22,8 @@ class Runner extends Component {
         return (
             // Important! Always set the container height explicitly
             <div style={{ height: '100vh', width: '100%' }}>
-              <GoogleMapReact
-                bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
+              {/* <GoogleMapReact
+                bootstrapURLKeys={{ key: "AIzaSyBTFjt9CuqK-kxwxNF7grsPafnHBSVUfD8" }}
                 defaultCenter={this.props.center}
                 defaultZoom={this.props.zoom}
               >
@@ -30,7 +32,7 @@ class Runner extends Component {
                   lng={30.337844}
                   text={'Kreyser Avrora'}
                 />
-              </GoogleMapReact>
+              </GoogleMapReact> */}
             </div>
           );
     }
