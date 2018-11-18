@@ -14,6 +14,11 @@ export default class Runner extends Component {
         zoom: 15
       };
 
+    onClick(obj){ 
+        console.log(obj.x, obj.y, obj.lat, obj.lng, obj.event)
+    ;}
+
+
     render() {
         return (
             // Important! Always set the container height explicitly
@@ -22,6 +27,7 @@ export default class Runner extends Component {
                 bootstrapURLKeys={{ key: "AIzaSyBTFjt9CuqK-kxwxNF7grsPafnHBSVUfD8" }}
                 defaultCenter={this.props.center}
                 defaultZoom={this.props.zoom}
+                onClick={_onClick}
               >
                 <AnyReactComponent
                   lat={47.5815936}
