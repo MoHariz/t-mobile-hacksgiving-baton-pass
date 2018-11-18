@@ -4,23 +4,31 @@
     <title>Geolocation</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <script src="./js/googleMapsGeoLocation.js"></script>
+
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/googleMaps.css" rel="stylesheet">
-    <script src="./js/googleMapsGeoLocation.js"></script>
+
 
   </head>
   <body>
 
-    <!-- MAP WITH YOUR CURRENT LOCATION -->
-    <section>
+    
+    <section  id="mapContainer">
         <div id="map"></div>
+        
 
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTFjt9CuqK-kxwxNF7grsPafnHBSVUfD8&callback=initMap">
 
         </script>
     </section>
+    <section>
+        <button id="getDistance"> Get Distance </button>
+    </section>  
+
+
   </body>
 </html>
