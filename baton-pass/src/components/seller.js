@@ -63,10 +63,10 @@ export default class SellerPage extends Component {
             </NavLink>
         <section>
             <div class="container col">
-                    <OrderCards />
-                    <OrderCards />       
-                    <OrderCards />
-                    <OrderCards />
+                <OrderCards />
+                <OrderCards />       
+                <OrderCards />
+                <OrderCards />
             </div>
         </section>
     </body>
