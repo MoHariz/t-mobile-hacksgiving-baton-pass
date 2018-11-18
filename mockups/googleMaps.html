@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
 
-    <title>Messing with Google Map API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/googleMaps.css" rel="stylesheet">
+    <script src="./js/googleMapsGeoLocation.js"></script>
+
   </head>
   <body>
-    
-    
 
+    <!-- MAP WITH YOUR CURRENT LOCATION -->
+    <section>
+        <div id="map"></div>
+
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTFjt9CuqK-kxwxNF7grsPafnHBSVUfD8&callback=initMap">
+
+        </script>
+    </section>
   </body>
 </html>
