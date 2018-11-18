@@ -8,10 +8,10 @@ export default class Runner extends Component {
 
     static defaultProps = {
         center: {
-          lat: 59.95,
-          lng: 30.33
+          lat: 47.5815936,
+          lng: -122.1517312
         },
-        zoom: 11
+        zoom: 15
       };
 
     render() {
@@ -24,9 +24,9 @@ export default class Runner extends Component {
                 defaultZoom={this.props.zoom}
               >
                 <AnyReactComponent
-                  lat={59.955413}
-                  lng={30.337844}
-                  text={'Kreyser Avrora'}
+                  lat={47.5815936}
+                  lng={-122.1517312}
+                  text={'Current Location'}
                 />
               </GoogleMapReact>
             </div>
