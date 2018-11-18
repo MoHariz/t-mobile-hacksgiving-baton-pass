@@ -95,11 +95,4 @@ function getDist() {
   // }
 
 }
-
-
-
-
-
-
-
-
+}
