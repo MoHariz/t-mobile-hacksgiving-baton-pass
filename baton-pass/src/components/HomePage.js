@@ -14,7 +14,8 @@ export default class HomePage extends Component {
 
     
     render() {
-        let homeButtonText = ["Buyer", "Seller", "Runner"];
+        // Davis made this array
+        let homeButtonText = ["Buyer", "Seller", "Runner"]; 
 
         let buttonTexts = []
         let buttons = []
@@ -31,7 +32,6 @@ export default class HomePage extends Component {
         return(
             <div>
                 <body>
-                    <NavBar/>
                     {buttons}
                 </body>
             </div>
